@@ -1,4 +1,5 @@
-﻿ using UnityEngine;
+﻿ using UnityEditor;
+ using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -156,13 +157,9 @@ namespace StarterAssets
         private void Update()
         {
             _hasAnimator = TryGetComponent(out _animator);
-
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                _animator.SetTrigger(_animIDDance);
-            }
-
+            
             JumpAndGravity();
+            Interaction();
             GroundedCheck();
             Move();
         }
@@ -352,6 +349,28 @@ namespace StarterAssets
             if (_verticalVelocity < _terminalVelocity)
             {
                 _verticalVelocity += Gravity * Time.deltaTime;
+            }
+        }
+        
+        private void Interaction()
+        {
+            if (_input.interaction)
+            {
+                Debug.Log("Interaction gerçekleşti");
+                
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+                //
+
+                _input.interaction = false;
             }
         }
 

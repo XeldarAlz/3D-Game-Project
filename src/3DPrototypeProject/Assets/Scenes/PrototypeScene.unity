@@ -266,6 +266,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3bb3d56f213e9f142a374b95497d2c97, type: 3}
   m_PrefabInstance: {fileID: 1726702544}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1162455816 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+  m_PrefabInstance: {fileID: 1983020637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1319852001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
@@ -478,11 +483,76 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ch03_nonPBR
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3bb3d56f213e9f142a374b95497d2c97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bb3d56f213e9f142a374b95497d2c97, type: 3}
+--- !u!1001 &1983020637
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8635680927251930738}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -749876600356752593, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
+      propertyPath: m_Name
+      value: Erika Archer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
 --- !u!4 &253970931753043216
 Transform:
   m_ObjectHideFlags: 0
@@ -2994,6 +3064,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 884981852}
+  - {fileID: 1162455816}
   m_Father: {fileID: 3373786741512805024}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8640602890460580297
@@ -3037,7 +3108,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2709418228361936922}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 3bb3d56f213e9f142a374b95497d2c97, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 9ce9c4b1f762cae4da1c772930aef897, type: 3}
   m_Controller: {fileID: 9100000, guid: 40db3173a05ae3242b1c182a09b0a183, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
