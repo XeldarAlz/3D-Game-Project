@@ -3,12 +3,23 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
+    public GameObject interactionText;
+    private PlayerInteraction _playerInteraction;
+
+    private void Start()
+    {
+        _playerInteraction = GetComponent<PlayerInteraction>();
+        interactionText.SetActive(false);
+    }
+
     // Trigger'a girdiğinde çalışır
     private void OnTriggerEnter(Collider otherCollidedObject)
     {
         if (otherCollidedObject.CompareTag("Interact"))
         {
-            GetComponent<ThirdPersonController>().CanInteract = true;
+            _playerInteraction.CanInteract = true;
+            _playerInteraction.interactionArea = otherCollidedObject.gameObject.GetComponent<InteractionArea>();
+            interactionText.SetActive(true);
         }
     }
     
@@ -17,7 +28,9 @@ public class PlayerCollision : MonoBehaviour
     {
         if (otherCollidedObject.CompareTag("Interact"))
         {
-            GetComponent<ThirdPersonController>().CanInteract = false;
+            _playerInteraction.CanInteract = false;
+            _playerInteraction.interactionArea = null;
+            interactionText.SetActive(false);
         }
     }
 }

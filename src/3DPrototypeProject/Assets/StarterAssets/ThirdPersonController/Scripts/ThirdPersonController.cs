@@ -50,10 +50,6 @@ namespace StarterAssets
         [Header("Player Grounded")]
         [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
         public bool Grounded = true;
-        
-        [Header("Player Interaction")]
-        [Tooltip("If the character can interact with world.")]
-        public bool CanInteract;
 
         [Tooltip("Useful for rough ground")]
         public float GroundedOffset = -0.14f;
@@ -163,7 +159,6 @@ namespace StarterAssets
             _hasAnimator = TryGetComponent(out _animator);
             
             JumpAndGravity();
-            Interaction();
             GroundedCheck();
             Move();
         }
@@ -354,31 +349,6 @@ namespace StarterAssets
             {
                 _verticalVelocity += Gravity * Time.deltaTime;
             }
-        }
-        
-        private void Interaction()
-        {
-            if (CanInteract)
-            {
-                if (_input.interaction)
-                {
-                    Debug.Log("Interaction gerçekleşti");
-                
-                    //
-                    //
-                    //
-                    //
-                    //
-                    //
-                    //
-                    //
-                    //
-                    //
-                    //
-                }
-            }
-            
-            _input.interaction = false;
         }
 
         private static float ClampAngle(float lfAngle, float lfMin, float lfMax)
