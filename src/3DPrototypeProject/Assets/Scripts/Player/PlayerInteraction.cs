@@ -25,16 +25,7 @@ public class PlayerInteraction : MonoBehaviour
             // Eger etkilesim tusuna bastiysam
             if (_input.interaction)
             {
-                ParticleSystem particleSystem = interactionArea.InteractionGameObject.GetComponent<ParticleSystem>();
-
-                if (particleSystem.isPlaying == true)
-                {
-                    particleSystem.Stop();
-                }
-                else
-                {
-                    particleSystem.Play();
-                }
+                interactionArea.Interact();
             }
         }
             
